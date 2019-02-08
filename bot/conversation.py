@@ -91,7 +91,7 @@ def cultivation(response):
 
     hyperlink_format = '<a href="{link}" target="{target}">{text}</a>'
     hyperlink_format = hyperlink_format.format(link=video_link, text='click here', target="_blank")
-    return response_encoder("You may visit this link for information about '" + search + "\n" + hyperlink_format)
+    return response_encoder("You may visit this link for information about " + search + "\n" + hyperlink_format)
 
 def rephrase(response):
 

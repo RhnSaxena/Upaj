@@ -344,12 +344,11 @@
 
 <!-- End Info Section -->
 
-
-<!-- Start Weather Forecast -->
-<div class="row" style="">
+<div class="row" style="width: 80%; margin: auto;">
     
     <!-- Start Latest News -->
-    <div class="collection with-header" style="width: 20vw;height:51vh; float:left; overflow: scroll;">
+    <div class="col s4">
+    <div class="collection with-header" style="height:51vh; overflow: scroll;">
         <div class="collection-header">
             <center>
                 <h4>Latest News</h4></center>
@@ -364,11 +363,12 @@
             </ul>
         </div>
     </div>
+    </div>
     <!-- End Latest News -->
 
     <!-- Start Yojna Div -->
-    <div class="col s2">
-        <div class="collection with-header" style="margin-top10px;width: 15vw;height:51vh; float:left; overflow: scroll;">
+    <div class="col s4">
+        <div class="collection with-header" style="height:51vh; overflow: scroll; padding: 0px 15px;">
             <div class="collection-header">
                 <center>
                     <h4>Yojna</h4></center>
@@ -381,8 +381,23 @@
         </div>
     </div>
     <!-- End Yojna Div -->
+
+    <!-- Start Dhan ki Baat Div -->
+    <div class="col s4">
+        <div class="collection with-header" style="height:51vh; overflow: scroll; padding: 0px 15px;">
+            <div class="collection-header">
+                <center>
+                    <h4>Dhan Ki Baat</h4></center>
+            </div>
+            <div>
+                <ul style="margin-left:5px;">
+                    <li><a href="https://www.indiafilings.com/learn/kisan-karz-mafi-yojana/">Dhan Ki Baat ki content</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End Dhan ki Baat Div -->
 </div>
-<!-- End Weather Forecast -->
 
 
   <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
@@ -423,7 +438,7 @@
   </div> -->
 
   <!-- Second Parallax Conatiner -->
-  <div class="parallax-container" style="display:block">
+  <div class="parallax-container" style="display:block; clear: both;">
     <div class="section no-pad-bot">
       <div class="container">
 
@@ -509,11 +524,10 @@
                           {% for farmer in farmers_trade %}
                             <li class="collection-item">
                                   <p>
-                                    Name : {{ farmer.name}}&nbsp;&nbsp;&nbsp;&nbsp;
+                                    Name: {{ farmer.name}}&nbsp;&nbsp;&nbsp;&nbsp;
                                     Crop Name: {{ farmer.crop_name }}&nbsp;&nbsp;&nbsp;&nbsp;
-                                    Name : {{ farmer.name}}&nbsp;&nbsp;&nbsp;&nbsp;
-                                    Phone Number : {{ farmer.phone}}&nbsp;&nbsp;&nbsp;&nbsp;
-                                    Price : {{ farmer.price }}&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                                    Phone Number: {{ farmer.phone}}&nbsp;&nbsp;&nbsp;&nbsp;
+                                    Price: &#x20b9 {{ farmer.price }}/quintal&nbsp;&nbsp;&nbsp;&nbsp;<br>
                                     <a href="{% url 'sendSMS' %}">Send SMS</a>
                                   </p>
                             </li>
@@ -549,7 +563,7 @@
                                       Name : {{ trader.name}}&nbsp;&nbsp;&nbsp;&nbsp;
                                       Crop Name: {{ trader.crop_name }}&nbsp;&nbsp;&nbsp;&nbsp;
                                       Phone Number : {{ trader.phone}}&nbsp;&nbsp;&nbsp;&nbsp;
-                                      Price : {{ trader.price }}&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                                      Price : &#x20b9 {{ trader.price }}/quintal&nbsp;&nbsp;&nbsp;&nbsp;<br>
                                       <a href="#">Send SMS</a>
                                     </p>
                               </li>
