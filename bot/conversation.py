@@ -207,7 +207,7 @@ def minimum_support_price_prediction(response):
         if(predicition <= 0):
             output = str('Sorry! no prediction avialable')
         else:
-            output = str('The minimum selling price of ' + crop + ' is \u20B9' +str(predicition.round()))
+            output = str('The minimum selling price of ' + crop + ' is \u20B9' +str(predicition.round()) + ' per quintal')
     except:
         output = str('Sorry! no prediction available')
     return response_encoder(output)
