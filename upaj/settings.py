@@ -25,7 +25,7 @@ SECRET_KEY = 'z08z##%pmi6jkz^1mqk%8mimq_x_+qxzb4qr+zt(+#4dp-z1xq'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['upajj.herokuapp.com']
+ALLOWED_HOSTS = ['demoupaj.herokuapp.com']
 
 
 # Application definition
